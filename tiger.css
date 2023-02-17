@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+}
+:root{
+font-family: indie flower;
+box-sizing: border-box;
+
+}
+
+@media (min-width:991px){
+body{
+border: 15px solid #111;
+height: calc(100vh - 30px);
+background-color: black;
+overflow: hidden;
+position: relative;
+}
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(217, 217, 217);
+    
+}
+.fa-solid{
+    font-size: 60px;
+    margin-left: 60px;
+}
+nav span {
+font-size: 30px;
+margin-right:40px ;
+cursor: pointer;
+
+}
+nav span:hover{
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+.social{
+display: flex;
+position: absolute;
+left: 30px;
+bottom: 20px;
+color: wheat;
+align-items: center;
+}
+.social i{
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.image{
+    position: absolute;
+    z-index: -3;
+    left: 150px;
+    top: -220px;
+    background: white;
+}
+.image img{
+filter: brightness();
+}
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    right: 150px;
+    bottom: 150px;
+    color: whitesmoke;
+}
+.text h1{
+    font-size: 150px;
+    position: relative;
+    margin-bottom: 20px;  
+}
+.text img{
+    position: absolute;
+    top: -240px;
+    left: -110px;
+    z-index: -4;
+    width: 800px;
+    height: 800px;
+    
+}
+.text p{
+    width: 400px;
+    line-height: 1.6;
+    
+}
+}
+@media (max-width : 767px) {
+
+    body{
+        border: 15px solid #111;
+        height: calc(100vh - 30px);
+        background-color: black;
+        overflow: hidden;
+        position: relative;
+     }
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    
+}        
+    header i{
+        font-size: 40px;
+    }
+    header nav {
+        margin-top: 20px;
+    }
+nav span {
+        font-size: 27px;
+        margin-right: 10px;
+}
+    .image img{
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        }
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+.text h1{
+    font-size: 130px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.text img{
+    max-width: 100%;
+    position: absolute;
+    top: 26px;
+    left: -10px;
+    z-index: -1;
+}
+.text p{
+
+    width: 400px;
+    line-height: 1.6;
+}
+
+
+}
+    
